@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Piadas engraçadas e vídeos de comédia, incluindo muito humor mineiro. Ria com conteúdos feitos para quem ama Minas Gerais!" />
+  <meta name="keywords" content="piadas, humor, vídeos engraçados, comédia, diversão, Minas Gerais, piadas mineiras, comédia mineira, humor regional, stand up MG, rir com mineiro" />
+  <meta name="author" content="Equipe Piadas News" />
+
+  <!-- Meta tags para SEO local -->
+  <meta name="geo.region" content="BR-MG" />
+  <meta name="geo.placename" content="Minas Gerais, Brasil" />
+  <meta name="geo.position" content="-18.5122;-44.5550" />
+  <meta name="ICBM" content="-18.5122, -44.5550" />
+
+  <!-- Meta tags para redes sociais -->
+  <meta property="og:title" content="Piadas Engraçadas em Vídeo" />
+  <meta property="og:description" content="Assista aos vídeos mais engraçados com humor mineiro e piadas de Minas Gerais!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seudominio.com/piadas" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Emoji_u1f602.svg/1200px-Emoji_u1f602.svg.png" />
+  <meta name="robots" content="index, follow" />
+
+  <title>Piadas Engraçadas em Vídeo</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .ad-banner {
+      background-color: #ff0000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      animation: blink 1s infinite;
+      position: relative;
+      z-index: 9999;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ff0000;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+      flex-direction: column;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 720px;
+      height: 405px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #ff0000;
+    }
+
+    .random-content {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff0000;
+      text-align: center;
+      margin: 30px auto;
+      word-break: break-word;
+      max-width: 90%;
+      user-select: text;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #f7f7f7;
+      text-align: center;
+      padding: 10px;
+      border-top: 2px solid #ff0000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="ad-banner" id="adBanner">
+    <span class="close-btn" onclick="document.getElementById('adBanner').style.display='none'">&times;</span>
+    <a id="adLink" href="#" target="_blank" style="color: white; text-decoration: none;"></a>
+  </div>
+
+  <header>
+    <h1>Piadas Engraçadas em Vídeo</h1>
+    <p>Ria com os melhores vídeos e piadas mineiras!</p>
+  </header>
+
+  <div class="video-container">
+    <h2 id="videoTitle" style="color: #ff0000; margin-bottom: 10px; text-align: center;"></h2>
+    <iframe id="videoFrame" allowfullscreen></iframe>
+  </div>
+
+  <div class="random-content" id="randomContent"></div>
+
+  <footer>
+    &copy; 2025 Piadas News Brasil - Todos os direitos reservados.
+  </footer>
+
+  <script>
+    const links = [
+      { url: "https://jogosantigos472302513.wordpress.com/maquinas-vps-temos-todas-as-opcoes-de-maqinas-para-voce/", texto: "As melhores vps do mercado" },
+      { url: "https://hostinger.com.br?REFERRALCODE=SSNVICTORXU8", texto: "🔥 Economize com Hostinger!" },
+      { url: "https://geocredibnkvitoria.com/", texto: "💰 Crédito rápido disponível" },
+      { url: "https://ocomerciobrasileironoticia.blogspot.com/2025/05/erp-profissional-para-empresas.html", texto: "⚙️ ERP Profissional" },
+      { url: "https://central.dokehost.com.br/aff.php?aff=90", texto: "📈 VPS AS MELHORES MÁQUINAS" },
+      { url: "https://creditopessoal.vercel.app/", texto: "📈 Simule seu crédito pessoal" },
+      { url: "https://www.youtube.com/@gamenologia", texto: "🎮 Gamenologia no YouTube" },
+      { url: "https://wa.me/5527998950540?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20laudo%20pericial.", texto: "Solicite agora seu <strong>Laudo Pericial Bancário</strong> e descubra!" },
+      { url: "https://wa.me/5527999497001", texto: "SEGURO DE CARRO DDD (27)99949-7001 CONSÓRCIO ENTRE OUTROS" },
+      { url: "https://www.larissasaib.com.br/", texto: "Solução capilar" }
+    ];
+
+    const videoIDs = [
+      "ieLwMZjiH04",
+      "myfhgU9BVEY"
+    ];
+
+    const videoTitles = [
+      "Especial de comédia - 1 hora de stand up sobre Minas Gerais e mineiros",
+      "Stand up - O mineirês é muito difícil"
+    ];
+
+    function generateRandomContent(length = 500) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
+      let result = '';
+      for (let i = 0; i < length; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return result;
+    }
+
+    function rotateAdBanner() {
+      const ad = links[Math.floor(Math.random() * links.length)];
+      const adLink = document.getElementById("adLink");
+      adLink.href = ad.url;
+      adLink.innerHTML = ad.texto;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const randomIndex = Math.floor(Math.random() * videoIDs.length);
+      document.getElementById("videoFrame").src = `https://www.youtube.com/embed/${videoIDs[randomIndex]}`;
+      document.getElementById("videoTitle").textContent = videoTitles[randomIndex];
+      const randomLength = Math.floor(Math.random() * 500) + 100;
+      document.getElementById("randomContent").textContent = generateRandomContent(randomLength);
+      rotateAdBanner();
+      setInterval(rotateAdBanner, 5000);
+    });
+  </script>
+</body>
+</html>
